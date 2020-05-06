@@ -15,3 +15,6 @@ width: 8em !important;
     font-size: 30px;
 }
 
+.btn:focus {
+    outline: none !important;
+  }
