@@ -9,11 +9,11 @@ const MovieResults=(props)=>{
     const movies = props;
     const results = movies.props.map((mr) =>
     
-        <Row className='row col-6 offset-3 rounded container justify-content-center border border-warning mt-4' key={mr.imdbID}>
-            <Col className='col-6 py-4'><img  fluid className='w-50'src={mr.Poster} alt='Poster not Available'/></Col>
-            <Col className='col-6 my-4 '><Button className='btn-danger btn-block my-1'onClick={() => props.removeItem(mr.imdbID)}><h4>Remove<IoIosTrash size={26}></IoIosTrash></h4></Button>
-            <h5 className='text-warning col-12'>{mr.Title}<h5 className='text-light'>({mr.Year})</h5></h5>
-            <Badge>{mr.Ratings}</Badge>
+        <Row className='row col-10 col-sm-6 offset-1 offset-sm-3 rounded container justify-content-center border border-warning mt-4' key={mr.imdbID}>
+            <Col className='col-10 col-sm-6 py-4'><img className='text-light img-fluid w-75'src={mr.Poster} alt='Poster not available'/></Col>
+            <Col className='col-10  col-sm-6 my-4 container'><h5 className='text-warning col-12'>{mr.Title}<h5 className='text-light'>({mr.Year})</h5></h5>
+            <Button  fluid className=' container btn-danger btn-block ml-3 my-1 w-75'onClick={() => props.removeItem(mr.imdbID)}><p>Remove<IoIosTrash size={26}></IoIosTrash></p></Button>
+            
             
             </Col>
             
