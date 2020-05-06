@@ -2,7 +2,14 @@
 width: 8em !important;
 
 }
+.btn-transparent{
+    background: transparent !important;
+}
 
+.btn-transparent:hover{
+    background: #ffc107 !important;
+    color: black !important;
 
+}
 
 
