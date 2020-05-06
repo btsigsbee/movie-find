@@ -69,7 +69,7 @@ class searchBar extends React.Component{
     handleSubmit=(event)=>{
         event.preventDefault();
         var search = this.state.searchValue;
-        axios.get('http://www.omdbapi.com/?apikey=1c223fba&s='+search)
+        axios.get('https://www.omdbapi.com/?apikey=1c223fba&s='+search)
         .then(response => { 
           var data=  _.uniqBy(response.data.Search, 'imdbID' );            
             this.setState({searchResults:data},console.log('done'));
