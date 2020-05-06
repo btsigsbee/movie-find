@@ -85,7 +85,7 @@ class searchBar extends React.Component{
 
         return<div className='pl-3 bg-dark'>
             <Row className='justify-content-center col-md-12 pt-3 bg-dark'>
-                <input className="col-4 input-group-text input-group-lg " type="text" placeholder='search for movies...' onChange={this.handleChange} />
+                <input className="col-6 input-group-text input-group-lg " type="text" placeholder='search for movies...' onChange={this.handleChange} />
                 <Button type='submit'className='btn btn-size mx-3 btn-outline-warning btn-transparent' 
                 onClick={this.handleSubmit}>Search</Button>
             </Row>
